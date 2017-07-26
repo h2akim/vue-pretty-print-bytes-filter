@@ -2,13 +2,13 @@
   "name": "vue-pretty-print-bytes-filter",
   "version": "1.0.0",
   "description": "A filter for Vue.js to format bytes into a nice human-readable format.",
-  "homepage": "http://ohdoylerules.com",
-  "repository": "https://github.com/james2doyle/vue-pretty-print-bytes-filter",
+  "homepage": "http://hakim.razalan.cf",
+  "repository": "https://github.com/h2akim/vue-pretty-print-bytes-filter",
   "main": "vue.pretty-print-bytes.js",
   "author": {
-    "name": "James Doyle",
-    "email": "james2doyle@gmail.com",
-    "url": "http://ohdoylerules.com/"
+    "name": "Hakim Razalan",
+    "email": "hakim.razalan@gmail.com",
+    "url": "http://hakim.razalan.cf"
   },
   "licenses": [{
     "type": "MIT",
