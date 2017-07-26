@@ -23,7 +23,7 @@ Vue.filter('prettyBytes', function (num, precision = 3) {
   }
 
   var exponent = Math.min(Math.floor(Math.log(num) / Math.log(1000)), units.length - 1);
-  num = (num / Math.pow(1000, exponent)).toFixed(precision) * 1;
+  num = (num / Math.pow(1000, exponent)).toPrecision(precision) * 1;
   var unit = units[exponent];
 
   return (neg ? '-' : '') + num + ' ' + unit;

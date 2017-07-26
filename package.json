@@ -1,6 +1,6 @@
 {
   "name": "vue-pretty-bytes-filter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A filter for Vue.js to format bytes into a nice human-readable format.",
   "homepage": "http://hakim.razalan.cf",
   "repository": "https://github.com/h2akim/vue-pretty-print-bytes-filter",

@@ -10,14 +10,14 @@ A filter for Vue.js to format bytes into a nice human-readable format. I pretty 
 
 ### Install
 
-Available through npm as `vue-pretty-print-bytes-filter`, or include as an inline script.
+Available through npm as `vue-pretty-bytes-filter`, or include as an inline script.
 
 ### Usage
 
 Template:
 
 ```html
-<em>{{ 1337 | prettyBytes }}</em>
+<em>{{ 1337 | prettyBytes(3) }}</em>
 ```
 
 Render:
