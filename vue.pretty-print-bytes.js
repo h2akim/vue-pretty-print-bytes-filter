@@ -1,11 +1,14 @@
 /* globals Vue */
 
 // optional filter for formatting the bytes in the view
-Vue.filter('prettyBytes', function (num) {
+Vue.filter('prettyBytes', function (num, precision = 3) {
   // jacked from: https://github.com/sindresorhus/pretty-bytes
   num = Number(num);
   if (isNaN(num)) {
     throw new TypeError('Expected a number');
+  }
+  if (isNaN(precision)) {
+    precision = 3;
   }
 
   var neg = num < 0;
@@ -20,7 +23,7 @@ Vue.filter('prettyBytes', function (num) {
   }
 
   var exponent = Math.min(Math.floor(Math.log(num) / Math.log(1000)), units.length - 1);
-  num = (num / Math.pow(1000, exponent)).toFixed(2) * 1;
+  num = (num / Math.pow(1000, exponent)).toFixed(precision) * 1;
   var unit = units[exponent];
 
   return (neg ? '-' : '') + num + ' ' + unit;
