@@ -1,13 +1,13 @@
 /* globals Vue */
 
 // optional filter for formatting the bytes in the view
-Vue.filter('prettyBytes', function (num, precision = 3) {
+Vue.filter('prettyBytes', function (num, precision) {
   // jacked from: https://github.com/sindresorhus/pretty-bytes
   num = Number(num);
   if (isNaN(num)) {
     throw new TypeError('Expected a number');
   }
-  if (isNaN(precision)) {
+  if (isNaN(precision) || (precision === undefined || precision == null)) {
     precision = 3;
   }
 
