@@ -12,6 +12,13 @@ A filter for Vue.js to format bytes into a nice human-readable format. I pretty 
 
 Available through npm as `vue-pretty-bytes-filter`, or include as an inline script.
 
+### Settings
+
+Add this line to your app.js after Vue loading
+```javascript
+Vue.use(require('vue-pretty-bytes-filter'))
+```
+
 ### Usage
 
 Template:
